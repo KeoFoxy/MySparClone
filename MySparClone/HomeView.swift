@@ -16,7 +16,7 @@ struct HomeView: View {
             Divider()
             
             ScrollView(.vertical, showsIndicators: false) {
-                VStack(spacing: 15) {
+                VStack(alignment: .leading,spacing: 15) {
                     StoriesView()
                         .padding(.leading)
 
@@ -28,6 +28,10 @@ struct HomeView: View {
                     
                     SmallPromoView()
                         
+                    Text("Рекомендуем")
+                        .font(.title)
+                        .bold()
+                        .padding(.leading)
                 }
                 .padding(.top, 5)
             }
