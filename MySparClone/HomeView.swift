@@ -9,12 +9,23 @@ import SwiftUI
 
 struct HomeView: View {
     var body: some View {
-        VStack {
+        VStack(spacing: 10) {
             Header()
-                .padding(.bottom)
+                .padding(.horizontal)
             
-            CircleBannersView()
+            Divider()
             
+            ScrollView(.vertical, showsIndicators: false) {
+                VStack(spacing: 15) {
+                    CircleBannersView()
+                        .padding(.leading)
+
+                    RectBannersView()
+                        .padding(.leading)
+                }
+                .padding(.top, 5)
+            }
+
             Spacer()
         }
     }
