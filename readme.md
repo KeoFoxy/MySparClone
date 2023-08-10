@@ -44,7 +44,7 @@ If you find any issues or want to contribute to the project, please create a Pul
 1. Clone the Tic Tac Toe repository:
 
    ```shell
-   git@github.com:KeoFoxy/CarParadise.git
+   git@github.com:KeoFoxy/MySparClone.git
    ```
-2. Open the `CarParadise.xcodeproj` project in Xcode.
+2. Open the `MySparClone.xcodeproj` project in Xcode.
 3. Build and run the project on a simulator or a real device.
