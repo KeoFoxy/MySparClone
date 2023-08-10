@@ -15,8 +15,8 @@
 
 <div style="display: flex;">
    <img src="preview/preview.gif" height='500' align=''>
-   <img src="preview/main1.PNG" height='500' align=''>
-   <img src="preview/main2.PNG" height='500' align=''>
+   <img src="preview/main1.png" height='500' align=''>
+   <img src="preview/main2.png" height='500' align=''>
 </div>
 
 ### Info
