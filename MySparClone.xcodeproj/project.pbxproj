@@ -17,6 +17,7 @@
 		F80E71592A855966003A3D9C /* NavTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F80E71582A855966003A3D9C /* NavTabView.swift */; };
 		F80E715B2A855BD8003A3D9C /* RectangleComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = F80E715A2A855BD8003A3D9C /* RectangleComponent.swift */; };
 		F80E715D2A855DC9003A3D9C /* RectBannersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F80E715C2A855DC9003A3D9C /* RectBannersView.swift */; };
+		F80E71602A85635D003A3D9C /* BonusesCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = F80E715F2A85635D003A3D9C /* BonusesCard.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,7 @@
 		F80E71582A855966003A3D9C /* NavTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavTabView.swift; sourceTree = "<group>"; };
 		F80E715A2A855BD8003A3D9C /* RectangleComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RectangleComponent.swift; sourceTree = "<group>"; };
 		F80E715C2A855DC9003A3D9C /* RectBannersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RectBannersView.swift; sourceTree = "<group>"; };
+		F80E715F2A85635D003A3D9C /* BonusesCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BonusesCard.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +106,7 @@
 			children = (
 				F80E71522A8551EC003A3D9C /* CircleBanner.swift */,
 				F80E715A2A855BD8003A3D9C /* RectangleComponent.swift */,
+				F80E715F2A85635D003A3D9C /* BonusesCard.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -187,6 +190,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F80E71602A85635D003A3D9C /* BonusesCard.swift in Sources */,
 				F80E71572A855924003A3D9C /* CircleBannersView.swift in Sources */,
 				F80E715B2A855BD8003A3D9C /* RectangleComponent.swift in Sources */,
 				F80E715D2A855DC9003A3D9C /* RectBannersView.swift in Sources */,
