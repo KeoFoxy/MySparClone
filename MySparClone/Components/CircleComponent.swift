@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct CircleBanner: View {
+struct CircleComponent: View {
     var imageName: String = "myspar"
     var bannerText: String = "Привилегии «Мой Spar»"
     
@@ -30,8 +30,8 @@ struct CircleBanner: View {
     }
 }
 
-struct CircleBanner_Previews: PreviewProvider {
+struct CircleComponent_Previews: PreviewProvider {
     static var previews: some View {
-        CircleBanner()
+        CircleComponent()
     }
 }
