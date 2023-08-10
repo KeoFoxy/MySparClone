@@ -18,7 +18,6 @@ struct CircleBannersView: View {
                 CircleBanner(imageName: "drinks", bannerText: "Лучший квас")
                 
             }
-            .padding(5)
         }
     }
 }
