@@ -10,12 +10,13 @@ import SwiftUI
 struct HomeView: View {
     var body: some View {
         VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+            Header()
+                .padding(.bottom)
+            
+            CircleBannersView()
+            
+            Spacer()
         }
-        .padding()
     }
 }
 
@@ -24,3 +25,5 @@ struct ContentView_Previews: PreviewProvider {
         HomeView()
     }
 }
+
+
