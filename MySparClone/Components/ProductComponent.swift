@@ -12,61 +12,79 @@ struct ProductComponent: View {
     var discountPrice: Double?
     var productImage: String
     
+    var extra: Bool = false
+    var extraText: String = "Супер Цена"
+    
     var body: some View {
-        VStack(alignment: .center) {
-            Image(productImage)
-                .resizable()
-                .scaledToFit()
-                .frame(height: 250)
-            
-            
-            HStack(alignment: .center) {
-                if let discountPrice = discountPrice {
-                    VStack(alignment: .leading) {
+        ZStack(alignment: .topLeading) {
+            VStack(alignment: .center) {
+                Image(productImage)
+                    .resizable()
+                    .scaledToFit()
+                    .frame(height: 150)
+                
+                // MARK: - Ценник
+                HStack(alignment: .center) {
+                    if let discountPrice = discountPrice {
+                        VStack(alignment: .leading) {
+                            HStack{
+                                Text(String(format: "%.2f", discountPrice))
+                                    .font(.system(size: 18, weight: .bold))
+                                    .foregroundColor(Color.black)
+                                
+                                Text("\u{20BD}/шт")
+                                    .font(.system(size: 18, weight: .bold))
+                            }
+                            
+                            Text(String(format: "%.2f", price))
+                                .font(.system(size: 18, weight: .bold))
+                                .strikethrough()
+                                .foregroundColor(Color.gray)
+                        }
+                    } else {
                         HStack{
                             Text(String(format: "%.2f", price))
-                                .font(.system(size: 24, weight: .bold))
-                                .foregroundColor(Color.black)
+                                .font(.system(size: 18, weight: .bold))
+                                .foregroundColor(.black)
                             
                             Text("\u{20BD}/шт")
-                                .font(.system(size: 24, weight: .bold))
+                                .font(.system(size: 18, weight: .bold))
+                                .foregroundColor(.black)
                         }
-                        
-                        Text(String(format: "%.2f", price))
-                            .font(.system(size: 24, weight: .bold))
-                            .strikethrough()
-                            .foregroundColor(Color.gray)
                     }
-                } else {
-                    HStack{
-                        Text(String(format: "%.2f", price))
-                            .font(.system(size: 24, weight: .bold))
-                            .foregroundColor(.black)
-                        
-                        Text("\u{20BD}/шт")
-                            .font(.system(size: 24, weight: .bold))
-                            .foregroundColor(.black)
-                    }
-                }
-                
-                Spacer()
-                
-                ZStack {
-                    Circle()
-                        .fill(.green)
-                        .frame(width: 74, height: 74)
                     
-                    Image(systemName: "basket.fill")
-                        .foregroundColor(.white)
-                        .imageScale(.large)
+                    Spacer()
+                    
+                    // MARK: - Иконка корзины
+                    ZStack {
+                        Circle()
+                            .fill(.green)
+                            .frame(width: 54, height: 54)
+                        
+                        Image(systemName: "basket.fill")
+                            .foregroundColor(.white)
+                            .imageScale(.large)
+                    }
                 }
+                .padding(.horizontal, 10)
             }
-            .padding(.horizontal, 10)
+            .frame(width: 200, height: 240)
+            .background(.white)
+            .cornerRadius(15)
+            .shadow(color: Color(.black).opacity(0.1), radius: 5)
+            
+            // MARK: - Плашка акций
+            
+            if extra {
+                Text(extraText)
+                    .font(.system(size: 12, weight: .semibold))
+                    .foregroundColor(.white)
+                    .padding(8)
+                    .background(
+                        RoundedCorners(color: .red, tl: 300, tr: 100, bl: 0, br: 100)
+                    )
+            }
         }
-        .frame(width: 270, height: 400)
-        .background(.white)
-        .cornerRadius(40)
-        .shadow(color: Color(.black).opacity(0.2), radius: 10)
     }
 }
 
