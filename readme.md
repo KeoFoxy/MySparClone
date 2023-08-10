@@ -30,6 +30,8 @@
 
 Сторонние библиотеки не использованы.   
 
+--- 
+
 ## Requirements
 
  - iOS 14.0 or later
@@ -41,7 +43,7 @@ If you find any issues or want to contribute to the project, please create a Pul
 
 ## Installation
 
-1. Clone the Tic Tac Toe repository:
+1. Clone the MySparClone repository:
 
    ```shell
    git@github.com:KeoFoxy/MySparClone.git
