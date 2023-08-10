@@ -27,11 +27,20 @@ struct HomeView: View {
                         .padding(.horizontal)
                     
                     SmallPromoView()
-                        
+                    
                     Text("Рекомендуем")
                         .font(.title)
                         .bold()
                         .padding(.leading)
+                    
+                    RecomendationsView()
+                        
+                    Text("Сладкое настроение")
+                        .font(.title)
+                        .bold()
+                        .padding(.leading)
+                    
+                    SweetOfferView()
                 }
                 .padding(.top, 5)
             }
@@ -41,7 +50,7 @@ struct HomeView: View {
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
+struct HomeView_Previews: PreviewProvider {
     static var previews: some View {
         HomeView()
     }
