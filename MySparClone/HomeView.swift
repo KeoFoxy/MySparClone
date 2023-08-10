@@ -17,11 +17,17 @@ struct HomeView: View {
             
             ScrollView(.vertical, showsIndicators: false) {
                 VStack(spacing: 15) {
-                    CircleBannersView()
+                    StoriesView()
                         .padding(.leading)
 
-                    RectBannersView()
+                    PromotionsView()
                         .padding(.leading)
+                    
+                    PointsBannerView()
+                        .padding(.horizontal)
+                    
+                    SmallPromoView()
+                        
                 }
                 .padding(.top, 5)
             }
