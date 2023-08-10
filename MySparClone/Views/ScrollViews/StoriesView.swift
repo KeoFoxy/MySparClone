@@ -11,7 +11,7 @@ struct StoriesView: View {
     var body: some View {
         ScrollView(.horizontal, showsIndicators: false) {
             HStack(alignment: .top, spacing: 5) {
-                CircleComponent()
+                CircleComponent(imageName: "myspar", bannerText: "Привилегии «Мой Spar»")
                 CircleComponent(imageName: "telegram", bannerText: "Мы в соцсетях")
                 CircleComponent(imageName: "cocktail", bannerText: "3 рецепта коктейлей")
                 CircleComponent(imageName: "tasting", bannerText: "Дегустаци в SPAR")

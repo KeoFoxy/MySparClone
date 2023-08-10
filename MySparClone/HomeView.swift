@@ -7,6 +7,8 @@
 
 import SwiftUI
 
+/// Основное View
+
 struct HomeView: View {
     var body: some View {
         VStack(spacing: 10) {

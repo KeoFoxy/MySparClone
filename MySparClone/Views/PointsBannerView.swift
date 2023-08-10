@@ -7,6 +7,9 @@
 
 import SwiftUI
 
+/// Компнонент с бонусной программой
+/// Можно кастомизировать qr code и фон самого баннера.
+
 struct PointsBannerView: View {
     var points: Int = 10
     var backgroundImageName: String = "bonusBg"
@@ -20,6 +23,7 @@ struct PointsBannerView: View {
 
             HStack {
                 VStack {
+                    // MARK: - Баллы
                     VStack(alignment: .leading, spacing: 0) {
                         HStack(alignment: .bottom, spacing: 15) {
                             Text("\(points)")
@@ -45,6 +49,7 @@ struct PointsBannerView: View {
 
                 Spacer()
 
+                // MARK: - QR Code
                 Image(qrCodeImageName)
                     .resizable()
                     .scaledToFit()

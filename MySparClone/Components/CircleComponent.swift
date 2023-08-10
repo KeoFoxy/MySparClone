@@ -7,9 +7,16 @@
 
 import SwiftUI
 
+/// Многоразовый компонент для сторис
+/// В макете они находятся сразу после хэдера
+/// Компонент кастомизируемый, в качестве
+/// Входных параметров принимает изображение и текст
+/// Вокруг картинки есть зеленая обводка,
+/// Как в теством задании и белая разделяющая линия.
+
 struct CircleComponent: View {
-    var imageName: String = "myspar"
-    var bannerText: String = "Привилегии «Мой Spar»"
+    var imageName: String
+    var bannerText: String
     
     var body: some View {
         VStack {
@@ -32,6 +39,7 @@ struct CircleComponent: View {
 
 struct CircleComponent_Previews: PreviewProvider {
     static var previews: some View {
-        CircleComponent()
+        CircleComponent(imageName: "myspar", bannerText: "Привилегии «Мой Spar»"
+)
     }
 }

@@ -7,12 +7,16 @@
 
 import SwiftUI
 
+/// Плалшка, которая отрисовывается вверху
+/// карточки продукта с разными надписями
+/// `Супер цена`, `Удар по ценам` и тд.
+
 struct RoundedCorners: View {
     var color: Color = .black
-    var tl: CGFloat = 0.0 // top-left radius parameter
-    var tr: CGFloat = 0.0 // top-right radius parameter
-    var bl: CGFloat = 0.0 // bottom-left radius parameter
-    var br: CGFloat = 0.0 // bottom-right radius parameter
+    var tl: CGFloat = 0.0 // Радиус верхнего-левого угла
+    var tr: CGFloat = 0.0 // Радиус верхнего-правого угла
+    var bl: CGFloat = 0.0 // Радиус нижнего-левого угла
+    var br: CGFloat = 0.0 // Радиус нижнего-правого угла
     
     var body: some View {
         GeometryReader { geometry in

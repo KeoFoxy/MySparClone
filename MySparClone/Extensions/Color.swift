@@ -7,6 +7,9 @@
 
 import SwiftUI
 
+/// Расширение для Color чтобы можно было
+/// использовать hex цветов
+
 extension Color {
     init(hex: String) {
         let scanner = Scanner(string: hex)

@@ -7,12 +7,18 @@
 
 import SwiftUI
 
+/// Маленький баннер для: Абонемент на кофе, мои скидки и тд
+/// Не знаю, как называется эта категория :/
+/// В качестве входных параметров - `text` - текст компонента
+/// `image` - картинка компонента.
+/// Но я предполагаю, что картинка должна быть уже на фоне.
+/// У компонента можно кастомизировать цвет фона.
+
 struct SmallPromoComponent: View {
     var text: String
+    var image: String
     
     var bgColor: Color = Color(hex: "#FBE5F0")
-    
-    var image: String = "cart_sale"
     
     var body: some View {
         VStack {
@@ -42,6 +48,6 @@ struct SmallPromoComponent: View {
 
 struct SmallPromoComponent_Previews: PreviewProvider {
     static var previews: some View {
-        SmallPromoComponent(text: "Мои скидки")
+        SmallPromoComponent(text: "Мои скидки", image: "cart_sale")
     }
 }

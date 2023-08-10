@@ -11,11 +11,11 @@ struct SmallPromoView: View {
     var body: some View {
         ScrollView(.horizontal, showsIndicators: false) {
             HStack(spacing: 20) {
-                SmallPromoComponent(text: "Абонемент на кофе", bgColor: Color(hex: "#AEEAE7"), image: "coffee_cup")
+                SmallPromoComponent(text: "Абонемент на кофе", image: "coffee_cup", bgColor: Color(hex: "#AEEAE7"))
                 
-                SmallPromoComponent(text: "Мои скидки", bgColor: Color(hex: "#FBE5F0"), image: "cart_sale")
+                SmallPromoComponent(text: "Мои скидки", image: "cart_sale", bgColor: Color(hex: "#FBE5F0"))
                 
-                SmallPromoComponent(text: "Карта в подарок", bgColor: Color(hex: "#D9F2E7"), image: "store_card")
+                SmallPromoComponent(text: "Карта в подарок", image: "store_card", bgColor: Color(hex: "#D9F2E7"))
             }
             .padding()
         }
