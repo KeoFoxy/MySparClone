@@ -55,16 +55,22 @@ struct ProductComponent: View {
                     
                     Spacer()
                     
-                    // MARK: - Иконка корзины
-                    ZStack {
-                        Circle()
-                            .fill(.green)
-                            .frame(width: 54, height: 54)
-                        
-                        Image(systemName: "basket.fill")
-                            .foregroundColor(.white)
-                            .imageScale(.large)
+                    // MARK: - Кнопка корзины
+                    
+                    Button {
+                        print("DEBUG: Add to card tap")
+                    } label: {
+                        ZStack {
+                            Circle()
+                                .fill(.green)
+                                .frame(width: 54, height: 54)
+                            
+                            Image(systemName: "basket.fill")
+                                .foregroundColor(.white)
+                                .imageScale(.large)
+                        }
                     }
+
                 }
                 .padding(.horizontal, 10)
             }
