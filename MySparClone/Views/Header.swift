@@ -19,12 +19,15 @@ struct Header: View {
                 Text("Москва, Москва и Московская область")
                     .font(.system(size: 16, weight: .regular))
                     .lineLimit(1)
+                
+                Spacer()
             }
             .padding(10)
             .overlay(
                 RoundedRectangle(cornerRadius: 30)
                     .stroke(Color(.systemGray4), lineWidth: 1)
             )
+            
             Image(systemName: "line.3.horizontal")
                 .foregroundColor(Color(.systemGreen))
                 .bold()
